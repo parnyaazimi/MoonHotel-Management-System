@@ -1,0 +1,75 @@
+﻿<Page x:Class="MoonHotel.View.FoodOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="FoodOrderPage">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1a2a6c"/>
+                <GradientStop Color="#b21f1f" Offset="0.5"/>
+                <GradientStop Color="#fdbb2d" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#AA000000"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="Food Order"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0 0 0 40"
+                       HorizontalAlignment="Center"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10">
+                <TextBlock Text="Food:" Width="140" Foreground="White"/>
+                <ComboBox x:Name="FoodBox"
+                          Width="300"
+                          DisplayMemberPath="FoodName"
+                          SelectedValuePath="FoodID"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10">
+                <TextBlock Text="Quantity:" Width="140" Foreground="White"/>
+                <TextBox x:Name="QuantityBox" Width="300"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10">
+                <TextBlock Text="Category:" Width="140" Foreground="White"/>
+                <ComboBox x:Name="CategoryBox"
+                          Width="200"
+                          DisplayMemberPath="CategoryName"
+                          SelectedValuePath="CategoryID"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10">
+                <TextBlock Text="Section:" Width="140" Foreground="White"/>
+                <ComboBox x:Name="SectionBox"
+                          Width="200"
+                          DisplayMemberPath="SectionName"
+                          SelectedValuePath="SectionID"/>
+            </StackPanel>
+
+            <Button Content="Submit Order"
+                    Width="200"
+                    Height="40"
+                    Margin="0 20"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    Click="SubmitOrder_Click"/>
+
+
+            <Button Content="Back To Home"
+                    Width="200"
+                    Height="40"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    Click="Back_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

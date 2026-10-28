@@ -1,0 +1,21 @@
+﻿<Page x:Class="MoonHotel.View.CustomerTypePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MoonHotel.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CustomerTypePage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Button Content="Existing Customer" Width="250" Height="60" Margin="10" Click="Existing_Click"/>
+            <Button Content="New Customer" Width="250" Height="60" Margin="10" Click="New_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
+    
+    

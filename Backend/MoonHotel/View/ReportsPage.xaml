@@ -1,0 +1,66 @@
+﻿<Page x:Class="MoonHotel.View.ReportsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="ReportsPage">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1a2a6c"/>
+                <GradientStop Color="#b21f1f" Offset="0.5"/>
+                <GradientStop Color="#fdbb2d" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#AA000000"/>
+
+        <StackPanel Margin="40">
+
+            <TextBlock Text="Moon Hotel Analysis Reports"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       Margin="0 0 0 20"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <ComboBox x:Name="reportSelector" Height="35" VerticalContentAlignment="Center" SelectedIndex="0">
+                    <ComboBoxItem Content="1. Hotel Revenue Report"/>
+                    <ComboBoxItem Content="2. Customer Ranking"/>
+                    <ComboBoxItem Content="3. Reservation Full Report"/>
+                    <ComboBoxItem Content="4. Services &amp; Prices"/>
+                    <ComboBoxItem Content="5. Hotel Ratings &amp; Reviews"/>
+                    <ComboBoxItem Content="6. Top Foods Sold"/>
+                    <ComboBoxItem Content="7. Books Inventory"/>
+                    <ComboBoxItem Content="8. Staff &amp; Roles"/>
+                    <ComboBoxItem Content="9. Orders History"/>
+                    <ComboBoxItem Content="10. Unpaid Invoices"/>
+                </ComboBox>
+
+                <Button Content="Show Report"
+                        Width="150"
+                        Margin="15 0 0 0"
+                        Background="#fdbb2d"
+                        Foreground="#1a2a6c"
+                        Click="GenerateReport_Click"/>
+            </StackPanel>
+
+            <DataGrid x:Name="reportGrid"
+                      AutoGenerateColumns="True"
+                      Height="350"
+                      Margin="0 20 0 0"
+                      IsReadOnly="True"
+                      Background="White" SelectionChanged="reportGrid_SelectionChanged"/>
+
+            <Button Content="Back"
+                    Width="120"
+                    Margin="0 15 0 0"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    Click="Back_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

@@ -1,0 +1,81 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+out/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.sln.ide
+
+# Visual Studio temporary files
+*.tmp_proj
+*.cache
+*.pdb
+*.ilk
+*.meta
+*.log
+*.tlog/
+*.lastbuildstate
+
+# .NET and NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+.nuget/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE settings
+.vscode/
+.idea/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.Development.json
+secrets.json
+
+# Database exports and local backups
+*.bak
+*.dump
+*.backup
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated application packages
+*.exe
+*.dll
+*.pdb
+*.msi
+*.msix
+*.appx
+
+# Temporary and backup files
+*~
+*.swp
+*.swo
+*.orig
+
+# Optional local database files
+*.sql.bak

@@ -1,0 +1,84 @@
+﻿<Page x:Class="MoonHotel.View.ReviewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="ReviewPage">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1a2a6c" Offset="0"/>
+                <GradientStop Color="#b21f1f" Offset="0.5"/>
+                <GradientStop Color="#fdbb2d" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#AA000000"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="Leave a Review"
+                       FontSize="36"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       Margin="0 0 0 30"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Hotel ID -->
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <TextBlock Text="Hotel ID:"
+                           Foreground="White"
+                           Width="100"/>
+                <TextBox x:Name="HotelIdTextBox"
+                         Width="200"/>
+            </StackPanel>
+
+            <!-- Comment -->
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <TextBlock Text="Review:"
+                           Foreground="White"
+                           Width="100"
+                           VerticalAlignment="Top"/>
+
+                <TextBox x:Name="CommentTextBox"
+                         Width="400"
+                         Height="120"
+                         AcceptsReturn="True"/>
+            </StackPanel>
+
+            <!-- Rating -->
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <TextBlock Text="Rating:"
+                           Foreground="White"
+                           Width="100"/>
+
+                <ComboBox x:Name="RatingComboBox"
+                          Width="200"
+                          DisplayMemberPath="RatingNum"
+                          SelectedValuePath="RatingID"/>
+            </StackPanel>
+
+            <Button Content="Submit Review"
+                    Width="200"
+                    Height="40"
+                    Margin="0 15 0 0"
+                    Click="Submit_Click"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    FontWeight="Bold"
+                    BorderThickness="0"/>
+
+            <Button Content="Back"
+                    Width="200"
+                    Height="40"
+                    Margin="0 10 0 0"
+                    Click="Back_Click"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    FontWeight="Bold"
+                    BorderThickness="0"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

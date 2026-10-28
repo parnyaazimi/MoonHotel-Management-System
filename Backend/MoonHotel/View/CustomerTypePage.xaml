@@ -1,0 +1,52 @@
+﻿<Page x:Class="MoonHotel.View.CustomerTypePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="CustomerTypePage">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1a2a6c"/>
+                <GradientStop Color="#b21f1f" Offset="0.5"/>
+                <GradientStop Color="#fdbb2d" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#AA000000"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="Customer Access"
+                       FontSize="50"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0 0 0 40">
+                
+            </TextBlock>
+
+            <Button Content="Existing Customer"
+                    Width="260"
+                    Height="55"
+                    Margin="10"
+                    FontSize="18"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    BorderThickness="0"
+                    Click="Existing_Click"/>
+
+            <Button Content="New Customer"
+                    Width="260"
+                    Height="55"
+                    Margin="10"
+                    FontSize="18"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    BorderThickness="0"
+                    Click="New_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

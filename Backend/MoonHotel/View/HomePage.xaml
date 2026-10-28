@@ -1,0 +1,69 @@
+﻿<Page x:Class="MoonHotel.View.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="HomePage">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1a2a6c" Offset="0"/>
+                <GradientStop Color="#b21f1f" Offset="0.5"/>
+                <GradientStop Color="#fdbb2d" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#AA000000"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="Moon Hotel"
+                       FontSize="60"
+                       FontFamily="Segoe UI Light"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="20"
+                                      Color="#fdbb2d"
+                                      ShadowDepth="0"
+                                      Opacity="0.7"/>
+                </TextBlock.Effect>
+            </TextBlock>
+
+            <Separator Width="200" Margin="0,10,0,40" Background="#fdbb2d"/>
+
+            <Button Content="Customer"
+                    Width="220"
+                    Height="50"
+                    Margin="10"
+                    FontSize="18"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    BorderThickness="0"
+                    Click="Customer_Click"/>
+
+            <Button Content="Employee"
+                    Width="220"
+                    Height="50"
+                    Margin="10"
+                    FontSize="18"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    BorderThickness="0"
+                    Click="Employee_Click"/>
+
+            <Button Content="Reports"
+                    Width="220"
+                    Height="50"
+                    Margin="10"
+                    FontSize="18"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    BorderThickness="0"
+                    Click="Reports_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

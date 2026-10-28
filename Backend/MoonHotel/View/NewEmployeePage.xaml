@@ -1,0 +1,79 @@
+﻿<Page x:Class="MoonHotel.View.NewEmployeePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="NewEmployeePage">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1a2a6c"/>
+                <GradientStop Color="#b21f1f" Offset="0.5"/>
+                <GradientStop Color="#fdbb2d" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#AA000000"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="Register New Employee"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0 0 0 30"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0 6">
+                <TextBlock Text="First Name:" Width="120" Foreground="White"/>
+                <TextBox x:Name="FirstNameBox" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 6">
+                <TextBlock Text="Last Name:" Width="120" Foreground="White"/>
+                <TextBox x:Name="LastNameBox" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 6">
+                <TextBlock Text="Username:" Width="120" Foreground="White"/>
+                <TextBox x:Name="UserNameBox" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 6">
+                <TextBlock Text="Password:" Width="120" Foreground="White"/>
+                <PasswordBox x:Name="PasswordBox" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 6">
+                <TextBlock Text="Salary:" Width="120" Foreground="White"/>
+                <TextBox x:Name="SalaryBox" Width="250"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="0 6">
+                <TextBlock Text="Hotel ID:" Width="120" Foreground="White"/>
+                <TextBox x:Name="HotelIdBox" Width="250"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 6">
+                <TextBlock Text="Role:" Width="120" Foreground="White"/>
+                <ComboBox x:Name="RoleComboBox"
+                          Width="250"
+                          DisplayMemberPath="RoleName"
+                          SelectedValuePath="RoleID"/>
+            </StackPanel>
+
+            <Button Content="Register"
+                    Width="200" Height="40"
+                    Margin="0 20 0 10"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    Click="Register_Click"/>
+
+            <Button Content="Back To Home"
+                    Width="200" Height="40"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    Click="Back_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

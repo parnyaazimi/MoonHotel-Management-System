@@ -1,0 +1,60 @@
+﻿<Page x:Class="MoonHotel.View.CustomerActionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="CustomerActionPage">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1a2a6c"/>
+                <GradientStop Color="#b21f1f" Offset="0.5"/>
+                <GradientStop Color="#fdbb2d" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#AA000000"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="Welcome to Moon Hotel!"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0 0 0 20"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Please select your next step:"
+                       FontSize="18"
+                       Foreground="#fdbb2d"
+                       Margin="0 0 0 40"
+                       HorizontalAlignment="Center"/>
+
+            <Button x:Name="btnReserve"
+                    Content="🏨 Reserve a Room"
+                    Width="320"
+                    Height="55"
+                    Margin="10"
+                    FontSize="18"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="Reserve_Click"/>
+
+            <Button x:Name="btnHome"
+                    Content="🏠 Back to Main Menu"
+                    Width="320"
+                    Height="50"
+                    Margin="10 30 10 0"
+                    FontSize="16"
+                    Background="#fdbb2d"
+                    Foreground="#1a2a6c"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="Home_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

@@ -1,0 +1,22 @@
+﻿<Page x:Class="MoonHotel.View.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MoonHotel.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StartPage">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock FontSize="40" FontFamily="Edwardian Script ITC" HorizontalAlignment="Center">In the name of god</TextBlock>
+            <TextBlock Margin="0 50 0 0"  FontFamily="Elephant" FontSize="15" HorizontalAlignment="Center"> Atena Sadeghi_403521462</TextBlock>
+            <TextBlock Margin="0 30 0 0" FontFamily="Elephant" FontSize="15" HorizontalAlignment="Center"> Sarina Abbasi_403521492</TextBlock>
+            <TextBlock Margin="0 30 0 0" FontFamily="Elephant" FontSize="15" HorizontalAlignment="Center"> Parnya Azimi_403522019</TextBlock>
+            <Button Margin="0 70 0 0" Height="20" Width="80" Click="enter">enter</Button>
+            <TextBlock Margin="0 80 0 0" FontFamily="Edwardian Script ITC" FontSize="15" HorizontalAlignment="Center">Spring1405</TextBlock>
+            
+        </StackPanel>
+    </Grid>
+</Page>
